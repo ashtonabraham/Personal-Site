@@ -1,0 +1,230 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
+.hero {
+  min-height: calc(100vh - $header-height);
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  @include container;
+  position: relative;
+  z-index: 1;
+}
+
+.content {
+  max-width: 700px;
+  padding: $space-4xl 0;
+}
+
+.greeting {
+  font-family: $font-body;
+  font-size: $font-size-lg;
+  color: $color-accent;
+  margin-bottom: $space-sm;
+  letter-spacing: 0.05em;
+}
+
+.name {
+  font-family: $font-heading;
+  font-size: $font-size-hero;
+  font-weight: $font-weight-black;
+  color: $color-text-primary;
+  line-height: 1;
+  margin-bottom: $space-lg;
+  letter-spacing: -0.03em;
+}
+
+.tagline {
+  font-size: $font-size-xl;
+  color: $color-text-secondary;
+  margin-bottom: $space-lg;
+  line-height: 1.4;
+}
+
+.highlight {
+  color: $color-text-primary;
+  font-weight: $font-weight-medium;
+}
+
+.description {
+  font-size: $font-size-base;
+  color: $color-text-muted;
+  max-width: 500px;
+  margin-bottom: $space-2xl;
+}
+
+.cta {
+  display: flex;
+  gap: $space-md;
+  flex-wrap: wrap;
+}
+
+.primaryBtn {
+  display: inline-flex;
+  align-items: center;
+  padding: $space-md $space-xl;
+  background: $color-text-primary;
+  color: $color-bg;
+  font-family: $font-body;
+  font-size: $font-size-sm;
+  font-weight: $font-weight-medium;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  transition: all $transition-fast;
+
+  &:hover {
+    background: $color-accent;
+    color: $color-bg;
+    transform: translateY(-2px);
+  }
+}
+
+.secondaryBtn {
+  display: inline-flex;
+  align-items: center;
+  padding: $space-md $space-xl;
+  background: transparent;
+  color: $color-text-primary;
+  border: 1px solid $color-border;
+  font-family: $font-body;
+  font-size: $font-size-sm;
+  font-weight: $font-weight-medium;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  transition: all $transition-fast;
+
+  &:hover {
+    border-color: $color-accent;
+    color: $color-accent;
+  }
+}
+
+.decoration {
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.15;
+  display: none;
+
+  @include lg {
+    display: block;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: $space-sm;
+}
+
+.gridItem {
+  width: 60px;
+  height: 60px;
+  background: $color-accent;
+
+  &:nth-child(odd) {
+    background: $color-text-primary;
+  }
+}
+
+// About Section
+.about {
+  padding: $space-5xl 0;
+  border-top: 1px solid $color-border;
+}
+
+.sectionTitle {
+  font-family: $font-heading;
+  font-size: $font-size-3xl;
+  font-weight: $font-weight-bold;
+  color: $color-text-primary;
+  margin-bottom: $space-2xl;
+
+  &::before {
+    content: '//';
+    color: $color-accent;
+    margin-right: $space-sm;
+  }
+}
+
+.aboutContent {
+  max-width: 600px;
+
+  p {
+    font-size: $font-size-base;
+    color: $color-text-secondary;
+    margin-bottom: $space-lg;
+  }
+}
+
+.learnMore {
+  display: inline-block;
+  font-size: $font-size-sm;
+  color: $color-accent;
+  font-weight: $font-weight-medium;
+  margin-top: $space-md;
+  transition: transform $transition-fast;
+
+  &:hover {
+    transform: translateX(4px);
+  }
+}
+
+// Skills Section
+.skills {
+  padding: $space-5xl 0;
+  background: $color-bg-elevated;
+  border-top: 1px solid $color-border;
+  border-bottom: 1px solid $color-border;
+}
+
+.skillGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $space-2xl;
+
+  @include sm {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include lg {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.skillCategory {
+  h3 {
+    font-family: $font-heading;
+    font-size: $font-size-lg;
+    font-weight: $font-weight-semibold;
+    color: $color-accent;
+    margin-bottom: $space-md;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: $space-sm;
+  }
+
+  li {
+    font-size: $font-size-sm;
+    color: $color-text-secondary;
+    padding-left: $space-md;
+    position: relative;
+
+    &::before {
+      content: '→';
+      position: absolute;
+      left: 0;
+      color: $color-text-muted;
+    }
+  }
+}

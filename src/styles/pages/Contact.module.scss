@@ -1,0 +1,176 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
+.hero {
+  padding: $space-4xl 0 $space-3xl;
+  border-bottom: 1px solid $color-border;
+}
+
+.container {
+  @include container;
+}
+
+.title {
+  font-family: $font-heading;
+  font-size: $font-size-4xl;
+  font-weight: $font-weight-black;
+  color: $color-text-primary;
+  margin-bottom: $space-lg;
+
+  &::before {
+    content: '//';
+    color: $color-accent;
+    margin-right: $space-sm;
+  }
+}
+
+.subtitle {
+  font-size: $font-size-lg;
+  color: $color-text-secondary;
+  max-width: 500px;
+}
+
+.content {
+  padding: $space-4xl 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $space-4xl;
+
+  @include lg {
+    grid-template-columns: 1.5fr 1fr;
+  }
+}
+
+.formSection {
+  max-width: 500px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: $space-xl;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: $space-sm;
+}
+
+.label {
+  font-family: $font-body;
+  font-size: $font-size-sm;
+  font-weight: $font-weight-medium;
+  color: $color-text-muted;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  padding: $space-md;
+  background: $color-bg-elevated;
+  border: 1px solid $color-border;
+  color: $color-text-primary;
+  font-family: $font-body;
+  font-size: $font-size-base;
+  transition: border-color $transition-fast;
+
+  &::placeholder {
+    color: $color-text-muted;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: $color-accent;
+  }
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.submitBtn {
+  align-self: flex-start;
+  padding: $space-md $space-2xl;
+  background: $color-text-primary;
+  color: $color-bg;
+  font-family: $font-body;
+  font-size: $font-size-sm;
+  font-weight: $font-weight-medium;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  transition: all $transition-fast;
+
+  &:hover {
+    background: $color-accent;
+    transform: translateY(-2px);
+  }
+}
+
+.success {
+  padding: $space-md;
+  background: rgba($color-accent, 0.1);
+  border: 1px solid $color-accent;
+  color: $color-accent;
+  font-size: $font-size-sm;
+}
+
+// Info section
+.info {
+  @include lg {
+    padding-left: $space-2xl;
+    border-left: 1px solid $color-border;
+  }
+}
+
+.infoSection {
+  margin-bottom: $space-2xl;
+
+  h3 {
+    font-family: $font-heading;
+    font-size: $font-size-sm;
+    font-weight: $font-weight-bold;
+    color: $color-accent;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: $space-md;
+  }
+}
+
+.infoLink {
+  font-size: $font-size-base;
+  color: $color-text-secondary;
+  transition: color $transition-fast;
+
+  &:hover {
+    color: $color-text-primary;
+  }
+}
+
+.socialLinks {
+  display: flex;
+  flex-direction: column;
+  gap: $space-sm;
+
+  a {
+    font-size: $font-size-base;
+    color: $color-text-secondary;
+    transition: color $transition-fast;
+
+    &:hover {
+      color: $color-accent;
+    }
+  }
+}
+
+.location {
+  font-size: $font-size-base;
+  color: $color-text-secondary;
+}

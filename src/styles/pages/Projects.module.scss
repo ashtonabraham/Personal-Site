@@ -1,0 +1,82 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
+.hero {
+  padding: $space-4xl 0 $space-3xl;
+  border-bottom: 1px solid $color-border;
+}
+
+.container {
+  @include container;
+}
+
+.title {
+  font-family: $font-heading;
+  font-size: $font-size-4xl;
+  font-weight: $font-weight-black;
+  color: $color-text-primary;
+  margin-bottom: $space-lg;
+
+  &::before {
+    content: '//';
+    color: $color-accent;
+    margin-right: $space-sm;
+  }
+}
+
+.subtitle {
+  font-size: $font-size-lg;
+  color: $color-text-secondary;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+.projects {
+  padding: $space-4xl 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $space-xl;
+
+  @include md {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include lg {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.cta {
+  padding: $space-4xl 0;
+  background: $color-bg-elevated;
+  border-top: 1px solid $color-border;
+  text-align: center;
+}
+
+.ctaText {
+  font-size: $font-size-lg;
+  color: $color-text-secondary;
+  margin-bottom: $space-xl;
+}
+
+.ctaButton {
+  display: inline-flex;
+  align-items: center;
+  padding: $space-md $space-xl;
+  background: $color-accent;
+  color: $color-bg;
+  font-family: $font-body;
+  font-size: $font-size-sm;
+  font-weight: $font-weight-medium;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  transition: all $transition-fast;
+
+  &:hover {
+    background: $color-accent-hover;
+    transform: translateY(-2px);
+  }
+}
