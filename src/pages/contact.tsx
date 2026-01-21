@@ -110,7 +110,12 @@ export default function Contact() {
             <div className={styles.info}>
               <div className={styles.infoSection}>
                 <h3>Email</h3>
-                <a href="mailto:ashtonworkmode@gmail.com" className={styles.infoLink}>
+                <a
+                  href="https://mail.google.com/mail/?view=cm&to=ashtonworkmode@gmail.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.infoLink}
+                >
                   ashtonworkmode@gmail.com
                 </a>
               </div>

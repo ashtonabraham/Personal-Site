@@ -29,7 +29,12 @@ export default function Footer() {
           >
             LinkedIn
           </a>
-          <a href="mailto:ashtonworkmode@gmail.com" className={styles.link}>
+          <a
+            href="https://mail.google.com/mail/?view=cm&to=ashtonworkmode@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.link}
+          >
             Email
           </a>
         </div>

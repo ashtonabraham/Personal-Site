@@ -30,7 +30,13 @@ export default function Resume() {
             <div className={styles.contact}>
               <span>New York, NY</span>
               <span>•</span>
-              <a href="mailto:ashtonworkmode@gmail.com">ashtonworkmode@gmail.com</a>
+              <a
+                href="https://mail.google.com/mail/?view=cm&to=ashtonworkmode@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                ashtonworkmode@gmail.com
+              </a>
               <span>•</span>
               <a
                 href="https://github.com/ashtonabraham"

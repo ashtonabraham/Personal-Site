@@ -120,7 +120,13 @@ export default function About() {
                     </a>
                   </li>
                   <li>
-                    <a href="mailto:ashtonworkmode@gmail.com">Email</a>
+                    <a
+                      href="https://mail.google.com/mail/?view=cm&to=ashtonworkmode@gmail.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Email
+                    </a>
                   </li>
                 </ul>
               </div>
