@@ -110,8 +110,8 @@ export default function Contact() {
             <div className={styles.info}>
               <div className={styles.infoSection}>
                 <h3>Email</h3>
-                <a href="mailto:hello@ashtonabraham.com" className={styles.infoLink}>
-                  hello@ashtonabraham.com
+                <a href="mailto:ashtonworkmode@gmail.com" className={styles.infoLink}>
+                  ashtonworkmode@gmail.com
                 </a>
               </div>
 

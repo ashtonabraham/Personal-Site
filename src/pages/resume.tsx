@@ -30,7 +30,7 @@ export default function Resume() {
             <div className={styles.contact}>
               <span>New York, NY</span>
               <span>•</span>
-              <a href="mailto:hello@ashtonabraham.com">hello@ashtonabraham.com</a>
+              <a href="mailto:ashtonworkmode@gmail.com">ashtonworkmode@gmail.com</a>
               <span>•</span>
               <a
                 href="https://github.com/ashtonabraham"

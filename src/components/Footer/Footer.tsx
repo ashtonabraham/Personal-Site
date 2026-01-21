@@ -29,7 +29,7 @@ export default function Footer() {
           >
             LinkedIn
           </a>
-          <a href="mailto:hello@ashtonabraham.com" className={styles.link}>
+          <a href="mailto:ashtonworkmode@gmail.com" className={styles.link}>
             Email
           </a>
         </div>

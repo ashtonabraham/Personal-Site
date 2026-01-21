@@ -120,7 +120,7 @@ export default function About() {
                     </a>
                   </li>
                   <li>
-                    <a href="mailto:hello@ashtonabraham.com">Email</a>
+                    <a href="mailto:ashtonworkmode@gmail.com">Email</a>
                   </li>
                 </ul>
               </div>
