@@ -10,7 +10,7 @@ const projects: Project[] = [
       'A real-time cryptocurrency tracker featuring live prices, candlestick charts, and smart caching that minimizes API calls while keeping data fresh. Supports Bitcoin, Ethereum, and Solana.',
     tags: ['Next.js', 'TypeScript', 'Tailwind CSS', 'CoinGecko API'],
     github: 'https://github.com/ashtonabraham/crypto-tracker',
-    link: '#',
+    link: 'https://crypto-tracker-wheat-nu.vercel.app/',
   },
   {
     id: '2',
