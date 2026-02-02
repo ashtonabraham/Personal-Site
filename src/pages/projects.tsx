@@ -5,11 +5,11 @@ import styles from '@/styles/pages/Projects.module.scss';
 const projects: Project[] = [
   {
     id: '1',
-    title: 'Project One',
+    title: 'Crypto Price Tracker',
     description:
-      'A full-stack web application built with React and Node.js. Features user authentication, real-time updates, and a clean, modern interface.',
-    tags: ['React', 'Node.js', 'PostgreSQL', 'TypeScript'],
-    github: 'https://github.com/ashtonabraham/project-one',
+      'A real-time cryptocurrency tracker featuring live prices, candlestick charts, and smart caching that minimizes API calls while keeping data fresh. Supports Bitcoin, Ethereum, and Solana.',
+    tags: ['Next.js', 'TypeScript', 'Tailwind CSS', 'CoinGecko API'],
+    github: 'https://github.com/ashtonabraham/crypto-tracker',
     link: '#',
   },
   {
