@@ -14,11 +14,12 @@ const projects: Project[] = [
   },
   {
     id: '2',
-    title: 'Project Two',
+    title: 'Daily Focus',
     description:
-      'A machine learning project that analyzes data patterns and provides insights. Built with Python and scikit-learn.',
-    tags: ['Python', 'Machine Learning', 'Data Analysis'],
-    github: 'https://github.com/ashtonabraham/project-two',
+      'A minimal productivity app to help you get work done. Pick up to 3 tasks, focus with a timer (15/25/45 min), and wrap up your day to build a streak.',
+    tags: ['JavaScript', 'CSS', 'Vite'],
+    github: 'https://github.com/ashtonabraham/productivity-app',
+    link: 'https://productivity-app-pied.vercel.app/',
   },
   {
     id: '3',
