@@ -23,12 +23,11 @@ const projects: Project[] = [
   },
   {
     id: '3',
-    title: 'Project Three',
+    title: 'Rate My Roommate',
     description:
-      'A mobile-first progressive web app that helps users track their daily habits and goals with beautiful visualizations.',
-    tags: ['Next.js', 'PWA', 'Chart.js', 'SCSS'],
-    github: 'https://github.com/ashtonabraham/project-three',
-    link: '#',
+      'A social web app built in Rust where users can create profiles and leave public roommate reviews.',
+    tags: ['Rust', 'Web App', 'Railway'],
+    link: 'https://rate-my-roommate-production.up.railway.app/signup',
   },
   {
     id: '4',
@@ -54,14 +53,6 @@ const projects: Project[] = [
     tags: ['React', 'Firebase', 'Markdown', 'WebSocket'],
     github: 'https://github.com/ashtonabraham/project-six',
     link: '#',
-  },
-  {
-    id: '7',
-    title: 'Rate My Roommate',
-    description:
-      'A social web app built in Rust where users can create profiles and leave public roommate reviews.',
-    tags: ['Rust', 'Web App', 'Railway'],
-    link: 'https://rate-my-roommate-production.up.railway.app/signup',
   },
 ];
 
