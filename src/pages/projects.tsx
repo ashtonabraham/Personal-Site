@@ -55,6 +55,14 @@ const projects: Project[] = [
     github: 'https://github.com/ashtonabraham/project-six',
     link: '#',
   },
+  {
+    id: '7',
+    title: 'Rate My Roommate',
+    description:
+      'A social web app built in Rust where users can create profiles and leave public roommate reviews.',
+    tags: ['Rust', 'Web App', 'Railway'],
+    link: 'https://rate-my-roommate-production.up.railway.app/signup',
+  },
 ];
 
 export default function Projects() {
